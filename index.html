@@ -10,19 +10,20 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
-      line-height: 1.6;
-      color: #333;
-      background: #ffffff;
+      line-height: 1.7;
+      color: #1f2937;
+      background: #f8fafc;
     }
 
+    /* HEADER */
     header {
       min-height: 100vh;
-      background: linear-gradient(135deg, #0f766e, #115e59);
-      color: white;
+      background: linear-gradient(135deg, #e0f2fe, #f0fdfa);
+      color: #0f172a;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -32,107 +33,127 @@
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.7rem;
       margin-bottom: 10px;
+      color: #0369a1;
     }
 
     header p {
       font-size: 1.2rem;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      color: #334155;
     }
 
     .btn {
-      padding: 12px 25px;
-      background: white;
-      color: #0f766e;
+      padding: 12px 30px;
+      background: #0284c7;
+      color: white;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
+      border-radius: 50px;
+      font-weight: 600;
       transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3);
     }
 
     .btn:hover {
-      background: #e6fffa;
+      background: #0369a1;
+      transform: translateY(-2px);
     }
 
+    /* SECTION */
     section {
-      padding: 70px 20px;
+      padding: 80px 20px;
       max-width: 1000px;
       margin: auto;
       animation: fadeIn 0.8s ease;
     }
 
     h2 {
-      color: #0f766e;
-      margin-bottom: 25px;
-      font-size: 2rem;
+      color: #0369a1;
+      margin-bottom: 30px;
+      font-size: 2.1rem;
+      text-align: center;
     }
 
+    /* ABOUT */
+    #about p {
+      text-align: center;
+      max-width: 750px;
+      margin: auto;
+      font-size: 1.05rem;
+      color: #334155;
+    }
+
+    /* SKILLS */
     #skills ul {
       list-style: none;
+      max-width: 600px;
+      margin: auto;
     }
 
     #skills li {
-      margin-bottom: 10px;
-      padding-left: 15px;
-      position: relative;
+      margin-bottom: 12px;
+      padding: 12px 15px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     #skills li::before {
-      content: "✔";
-      color: #0f766e;
-      position: absolute;
-      left: 0;
+      content: "🩺";
     }
 
+    /* EXPERIENCE */
     #projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
+      gap: 30px;
     }
 
     .card {
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 25px;
-      background: #ffffff;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
     }
 
     .card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
     }
 
     .card h3 {
-      margin-bottom: 10px;
-      color: #0f766e;
+      color: #0284c7;
+      margin-bottom: 12px;
     }
 
     .card p {
       margin-bottom: 8px;
       font-size: 0.95rem;
+      color: #475569;
+    }
+
+    /* CONTACT */
+    #contact {
+      text-align: center;
     }
 
     #contact p {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 1rem;
     }
 
-    #contact a {
-      color: #0f766e;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    #contact a:hover {
-      text-decoration: underline;
-    }
-
+    /* FOOTER */
     footer {
       text-align: center;
       padding: 25px;
-      background: #f1f5f9;
+      background: #e0f2fe;
       font-size: 0.9rem;
+      color: #0369a1;
     }
 
     @keyframes fadeIn {
@@ -151,7 +172,7 @@
 <body>
 
   <header>
-    <h1>Hi, I’m Atha Shalihah</h1>
+    <h1>Atha Shalihah</h1>
     <p>Professional Nurse | Perawat Profesional</p>
     <a href="#projects" class="btn">View Experience</a>
   </header>
@@ -160,10 +181,8 @@
     <h2>About Me</h2>
     <p>
       I am a professional Nurse with experience in providing comprehensive nursing care
-      to patients in clinical and healthcare environments. I am skilled in patient assessment,
-      nursing interventions, and collaboration with medical teams to ensure optimal patient
-      safety and comfort. I am committed to delivering compassionate, ethical, and high-quality
-      healthcare services while continuously improving my clinical knowledge and skills.
+      in clinical and community healthcare settings. I prioritize patient safety, comfort,
+      and ethical nursing practice while continuously improving my professional competence.
     </p>
   </section>
 
@@ -175,9 +194,9 @@
       <li>Medication Administration</li>
       <li>Vital Signs Monitoring</li>
       <li>Wound Care & Infection Control</li>
-      <li>Emergency Response (Basic Life Support)</li>
-      <li>Medical Documentation & Reporting</li>
-      <li>Communication & Patient Education</li>
+      <li>Emergency Response (BLS)</li>
+      <li>Medical Documentation</li>
+      <li>Patient Education & Communication</li>
     </ul>
   </section>
 
@@ -187,20 +206,18 @@
     <div class="card">
       <h3>Clinical Practice – Hospital</h3>
       <p>
-        Provided direct nursing care to patients, including monitoring vital signs,
-        assisting medical procedures, and ensuring patient comfort and safety.
+        Delivered direct nursing care, monitored patient conditions, assisted medical
+        procedures, and maintained patient safety and comfort.
       </p>
-      <p><strong>Focus:</strong> Patient Care, Clinical Support</p>
       <p><strong>Role:</strong> Nursing Staff / Student Nurse</p>
     </div>
 
     <div class="card">
       <h3>Community Health Practice</h3>
       <p>
-        Participated in community health services such as health education,
-        basic health screening, and preventive care programs.
+        Participated in public health programs, health education, and basic screening
+        to improve community health awareness.
       </p>
-      <p><strong>Focus:</strong> Public Health & Education</p>
       <p><strong>Role:</strong> Community Nurse</p>
     </div>
 
@@ -208,8 +225,8 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: alfathinzahidulhumam@gmail.com</p>
-    <p>WhatsApp: 082386892129</p>
+    <p>Email: athashalihah1@gmail.com</p>
+    <p>WhatsApp: 082282673893</p>
   </section>
 
   <footer>
