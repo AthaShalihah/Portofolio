@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Atha Shalihah - Perawat</title>
+  <title>Portfolio | Atha Shalihah - Remote Professional</title>
 
   <style>
     * {
@@ -16,14 +16,14 @@
     body {
       line-height: 1.7;
       color: #1f2937;
-      background: #f8fafc;
+      background: #f9fafb;
     }
 
     /* HEADER */
     header {
       min-height: 100vh;
-      background: linear-gradient(135deg, #e0f2fe, #f0fdfa);
-      color: #0f172a;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -33,30 +33,28 @@
     }
 
     header h1 {
-      font-size: 2.7rem;
+      font-size: 2.8rem;
       margin-bottom: 10px;
-      color: #0369a1;
     }
 
     header p {
       font-size: 1.2rem;
       margin-bottom: 25px;
-      color: #334155;
+      opacity: 0.95;
     }
 
     .btn {
-      padding: 12px 30px;
-      background: #0284c7;
-      color: white;
+      padding: 12px 32px;
+      background: white;
+      color: #1e40af;
       text-decoration: none;
       border-radius: 50px;
       font-weight: 600;
       transition: 0.3s;
-      box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3);
     }
 
     .btn:hover {
-      background: #0369a1;
+      background: #e0e7ff;
       transform: translateY(-2px);
     }
 
@@ -69,7 +67,7 @@
     }
 
     h2 {
-      color: #0369a1;
+      color: #1e40af;
       margin-bottom: 30px;
       font-size: 2.1rem;
       text-align: center;
@@ -77,33 +75,29 @@
 
     /* ABOUT */
     #about p {
-      text-align: center;
       max-width: 750px;
       margin: auto;
+      text-align: center;
       font-size: 1.05rem;
-      color: #334155;
+      color: #374151;
     }
 
     /* SKILLS */
     #skills ul {
       list-style: none;
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
     }
 
     #skills li {
-      margin-bottom: 12px;
-      padding: 12px 15px;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    #skills li::before {
-      content: "🩺";
+      background: white;
+      padding: 14px 18px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      font-size: 0.95rem;
     }
 
     /* EXPERIENCE */
@@ -115,26 +109,26 @@
 
     .card {
       background: white;
-      border-radius: 16px;
+      border-radius: 18px;
       padding: 30px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
       transition: 0.3s;
     }
 
     .card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      box-shadow: 0 22px 45px rgba(0,0,0,0.12);
     }
 
     .card h3 {
-      color: #0284c7;
+      color: #1d4ed8;
       margin-bottom: 12px;
     }
 
     .card p {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       font-size: 0.95rem;
-      color: #475569;
+      color: #4b5563;
     }
 
     /* CONTACT */
@@ -147,13 +141,23 @@
       font-size: 1rem;
     }
 
+    #contact a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
     /* FOOTER */
     footer {
       text-align: center;
       padding: 25px;
-      background: #e0f2fe;
+      background: #eef2ff;
       font-size: 0.9rem;
-      color: #0369a1;
+      color: #1e40af;
     }
 
     @keyframes fadeIn {
@@ -173,30 +177,31 @@
 
   <header>
     <h1>Atha Shalihah</h1>
-    <p>Professional Nurse | Perawat Profesional</p>
-    <a href="#projects" class="btn">View Experience</a>
+    <p>Remote Professional | Virtual & Administrative Support</p>
+    <a href="#projects" class="btn">View Work Experience</a>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a professional Nurse with experience in providing comprehensive nursing care
-      in clinical and community healthcare settings. I prioritize patient safety, comfort,
-      and ethical nursing practice while continuously improving my professional competence.
+      I am a detail-oriented and reliable remote professional with experience in administrative
+      support, online coordination, and digital task management. I am highly adaptable, capable
+      of working independently, and committed to delivering accurate and timely results in a
+      remote working environment.
     </p>
   </section>
 
   <section id="skills">
-    <h2>Nursing Skills</h2>
+    <h2>Skills & Tools</h2>
     <ul>
-      <li>Patient Assessment & Monitoring</li>
-      <li>Basic & Advanced Nursing Care</li>
-      <li>Medication Administration</li>
-      <li>Vital Signs Monitoring</li>
-      <li>Wound Care & Infection Control</li>
-      <li>Emergency Response (BLS)</li>
-      <li>Medical Documentation</li>
-      <li>Patient Education & Communication</li>
+      <li>Administrative & Virtual Assistant Support</li>
+      <li>Data Entry & Document Management</li>
+      <li>Email Handling & Online Communication</li>
+      <li>Customer Support (Chat & Email)</li>
+      <li>Google Workspace (Docs, Sheets, Drive)</li>
+      <li>Microsoft Word & Excel</li>
+      <li>Basic Canva Design</li>
+      <li>Time Management & Remote Collaboration</li>
     </ul>
   </section>
 
@@ -204,21 +209,21 @@
     <h2>Experience</h2>
 
     <div class="card">
-      <h3>Clinical Practice – Hospital</h3>
+      <h3>Remote Administrative Support</h3>
       <p>
-        Delivered direct nursing care, monitored patient conditions, assisted medical
-        procedures, and maintained patient safety and comfort.
+        Assisted with data entry, document organization, email management, and daily
+        administrative tasks to support remote operations.
       </p>
-      <p><strong>Role:</strong> Nursing Staff / Student Nurse</p>
+      <p><strong>Work Type:</strong> Remote / Online</p>
     </div>
 
     <div class="card">
-      <h3>Community Health Practice</h3>
+      <h3>Online Customer & Chat Support</h3>
       <p>
-        Participated in public health programs, health education, and basic screening
-        to improve community health awareness.
+        Handled customer inquiries through chat and email, provided clear responses,
+        and ensured customer satisfaction in a timely manner.
       </p>
-      <p><strong>Role:</strong> Community Nurse</p>
+      <p><strong>Work Type:</strong> Remote Support</p>
     </div>
 
   </section>
@@ -230,7 +235,7 @@
   </section>
 
   <footer>
-    <p>© 2026 Atha Shalihah | Professional Nurse</p>
+    <p>© 2026 Atha Shalihah | Remote Professional</p>
   </footer>
 
 </body>
