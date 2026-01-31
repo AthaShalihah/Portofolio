@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Atha Shalihah - Perawat</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #ffffff;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f766e, #115e59);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: white;
+      color: #0f766e;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e6fffa;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 0.8s ease;
+    }
+
+    h2 {
+      color: #0f766e;
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    #skills ul {
+      list-style: none;
+    }
+
+    #skills li {
+      margin-bottom: 10px;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    #skills li::before {
+      content: "✔";
+      color: #0f766e;
+      position: absolute;
+      left: 0;
+    }
+
+    #projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 25px;
+      background: #ffffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0f766e;
+    }
+
+    .card p {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    #contact p {
+      margin-bottom: 10px;
+    }
+
+    #contact a {
+      color: #0f766e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #f1f5f9;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Hi, I’m Atha Shalihah</h1>
+    <p>Professional Nurse | Perawat Profesional</p>
+    <a href="#projects" class="btn">View Experience</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a professional Nurse with experience in providing comprehensive nursing care
+      to patients in clinical and healthcare environments. I am skilled in patient assessment,
+      nursing interventions, and collaboration with medical teams to ensure optimal patient
+      safety and comfort. I am committed to delivering compassionate, ethical, and high-quality
+      healthcare services while continuously improving my clinical knowledge and skills.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Nursing Skills</h2>
+    <ul>
+      <li>Patient Assessment & Monitoring</li>
+      <li>Basic & Advanced Nursing Care</li>
+      <li>Medication Administration</li>
+      <li>Vital Signs Monitoring</li>
+      <li>Wound Care & Infection Control</li>
+      <li>Emergency Response (Basic Life Support)</li>
+      <li>Medical Documentation & Reporting</li>
+      <li>Communication & Patient Education</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>Clinical Practice – Hospital</h3>
+      <p>
+        Provided direct nursing care to patients, including monitoring vital signs,
+        assisting medical procedures, and ensuring patient comfort and safety.
+      </p>
+      <p><strong>Focus:</strong> Patient Care, Clinical Support</p>
+      <p><strong>Role:</strong> Nursing Staff / Student Nurse</p>
+    </div>
+
+    <div class="card">
+      <h3>Community Health Practice</h3>
+      <p>
+        Participated in community health services such as health education,
+        basic health screening, and preventive care programs.
+      </p>
+      <p><strong>Focus:</strong> Public Health & Education</p>
+      <p><strong>Role:</strong> Community Nurse</p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: alfathinzahidulhumam@gmail.com</p>
+    <p>WhatsApp: 082386892129</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Atha Shalihah | Professional Nurse</p>
+  </footer>
+
+</body>
+</html>
